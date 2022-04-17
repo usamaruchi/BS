@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-system</title>
+    <!-- CSSOM -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="./bs/bootstrap-4.2.1-dist/css/bootstrap.css">
+
+    
+    <style>
+      .myCard {
+            /* width: 33.33%; */
+            height: 300px;
+            border: 1px solid red;
+        }
+
+        /* .img-wrap {
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+        } */
+
+        .myCard img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .myCard img .cat{
+            position: relative;
+            transform: translateX(-50px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="myCard">
+                    <img class="cat" src="./img/cat.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="myCard">
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="myCard">
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="myCard">
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="myCard">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

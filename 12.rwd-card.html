@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+        border: 1px solid rgb(100, 123, 255);
+    }
+
+    .img-wrap {
+        width: 100%;
+        height: 200px;
+        border: 1px solid rgb(255, 99, 195);
+    }
+
+
+    @media screen and (min-width:768px) {
+        .container {
+            width: 750px;
+        }
+
+        .box {
+            width: 50%;
+
+        }
+    }
+
+    @media screen and (min-width:1201px) {
+        .container {
+            width: 1200px;
+        }
+
+        .box {
+            width: 25%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="img-wrap"></div>
+                box1
+            </div>
+            <div class="box">
+                <div class="img-wrap"></div>
+                box2
+            </div>
+            <div class="box">
+                <div class="img-wrap"></div>
+                box3
+            </div>
+            <div class="box">
+                <div class="img-wrap"></div>
+                box4
+            </div>
+            <div class="box">
+                <div class="img-wrap"></div>
+                box5
+            </div>
+            <div class="box">
+                <div class="img-wrap"></div>
+                box6
+            </div>
+
+</body>
+
+</html>

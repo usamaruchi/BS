@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 800px;
+            height: 800px;
+            background-color: rgb(185, 185, 185);
+            display: flex;
+
+            align-items: stretch;
+            /* justify-content: center; */
+
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(184, 222, 255);
+            outline: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">123</div>
+        <div class="box">1234</div>
+        <div class="box">12345</div>
+        <div class="box">123456</div>
+        <div class="box">1234567</div>
+        <div class="box">12345678</div>
+        <div class="box">123456789</div>
+    </div>
+</body>
+
+</html>

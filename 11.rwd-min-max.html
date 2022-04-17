@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p {
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    /* -------------------------------------- */
+    /* min以上有變化，順序要先放小的，再到大的 */
+    @media screen and (min-width:600px) {
+        .min {
+            color: rgb(255, 220, 66);
+        }
+    }
+
+    @media screen and (min-width:1000px) {
+        .min {
+            color: rgb(255, 220, 66);
+        }
+    }
+
+    /* -------------------------------------- */
+    /* max以下有變化，順序要先放大的，再到小的 */
+    @media screen and (max-width:1000px) {
+        .max {
+            color: rgb(21, 37, 255);
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .max {
+            color: rgb(144, 186, 255);
+        }
+    }
+
+    /* -------------------------------------- */
+    /* 混和運用 */
+    @media screen and (min-width:600px) and (max-width:1000px) {
+        .mix-inrange {
+            color: rgb(93, 187, 99);
+        }
+    }
+
+    /* -------------------------------------- */
+    /* 無此範圍，所以會是原本的黑色 */
+    @media screen and (min-width:1000px) and (max-width:600px) {
+        .mix-outrange {
+            color: rgb(255, 57, 73);
+        }
+    }
+
+</style>
+
+<body>
+    <p class="min">min-width</p>
+    <p class="max">max-width</p>
+    <p class="mix-inrange">inrange</p>
+    <p class="mix-outrange">outrange</p>
+</body>
+
+</html>

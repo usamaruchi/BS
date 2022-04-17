@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 880px;
+            height: 430px;
+            background-color: antiquewhite;
+            display: grid;
+
+            /* 垂直行的大小px，tr、auto是補剩下的，但不能同時使用，fr>auto */
+            grid-template-columns: 300px auto;
+            /* 水平列的大小px */
+            grid-template-rows: 1fr 300px 1fr;
+            
+            /* 定義class名地區 */
+            grid-template-areas:
+                "header header"
+                "menu content"
+                "footer footer";
+        }
+
+        div {
+            outline: 1px solid red;
+        }
+
+        .header{
+            grid-area: header;
+        }
+        .menu{
+            grid-area: menu;
+        }
+        .content{
+            grid-area: content;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="conent">conent</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

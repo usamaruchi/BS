@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            outline: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            /* 全部至中 */
+            align-items: center;
+
+        }
+
+
+        /* .logo{
+            text-align: center; 無法使用
+        } */
+
+        .nav-right {
+            display: none;
+        }
+
+
+        @media screen and (min-width:600px) {
+            .mobile-btn {
+                display: none;
+            }
+
+            .nav-right {
+                display: flex;
+                /* 剩餘空間全給 */
+                flex-grow: 1;
+
+                /* align-items: center; */
+
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                padding-left: 0;
+                margin-left: 40px;
+                /* 推開form */
+                margin-right: auto;
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="mobile-btn">三</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+            <form action="">
+                <input type="text">
+                <button></button>
+            </form>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>

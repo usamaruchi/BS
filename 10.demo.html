@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .justify-content-between{
+            justify-content: space-between;
+        }
+
+        .justify-content-center{
+            justify-content:center;
+        }
+
+        .mb-100{
+            margin-bottom: 100px;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .nav-left,
+        .logo,
+        .nav-right {
+            width: 33.333%;
+            display: flex;
+            align-items: center;
+
+            /* background-color: rgb(251, 244, 219); */
+        }
+
+        .nav-left a {
+            text-decoration: none;
+            margin: 5px;
+            color: #000;
+        }
+
+        .logo {
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .nav-right {
+            justify-content: flex-end;
+        }
+
+        .nav-right i {
+            font-size: 1.5rem;
+            margin: 5px;
+        }
+
+        .img-300 {
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .img-300 img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+
+        .product-model{
+            outline: 1px solid red;
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="container ">
+        <div class="row ">
+            <div class="nav-left">
+                <a href="#">shop</a>
+                <a href="#">Lookbook</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="logo">
+                <h1>Alameda</h1>
+            </div>
+            <div class="nav-right">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row justify-content-between mb-100">
+            <div class="items">
+                <div class="img-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg?format=750w"
+                        alt="">
+                </div>
+                <p>Lounge Tunic / Black</p>
+            </div>
+            <div class="items">
+                <div class="img-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg?format=750w"
+                        alt="">
+                </div>
+                <p>Lounge Tunic / Black</p>
+            </div>
+            <div class="items">
+                <div class="img-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg?format=750w"
+                        alt="">
+                </div>
+                <p>Lounge Tunic / Black</p>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <div class="row justify-content-center mb-100">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis.</span>
+    </div>
+
+    <main class="container">
+        <div class="row justify-content-between  mb-100">
+            <div class="product-info">
+                <div class="img-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg"
+                        alt="">
+                </div>
+                <p>Lisa Shirt</p>
+                <p>$50.00</p>
+            </div>
+
+            <div class="product-model">
+                <div class="">
+                    <img src="" alt="">
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="product-info order-2">
+                <div class="img-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg"
+                        alt="">
+                </div>
+                <p>Lisa Shirt</p>
+                <p>$50.00</p>
+            </div>
+
+            <div class="product-model order-1">
+                <div class="">
+                    <img src="" alt="">
+                </div>
+    
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+
+            /* fr為grid中的主要單位，可用auto，但不要同時使用兩種不同單位，使用上都同樣單位才不會亂 */
+
+            /* grid-template-columns定義多少欄 */
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-columns定義多少列 */
+            grid-template-rows: 1fr 3fr 5fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box autobg">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg">box3</div>
+        <div class="box autobg">box4</div>
+        <div class="box autobg">box5</div>
+        <div class="box autobg">box6</div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+     function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+    }
+    
+    function getRBGA() {
+        return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+    }
+    
+    const elements = document.querySelectorAll('.autobg');
+    
+    Array.from(elements).forEach((element, index) => {
+        element.style.backgroundImage = getRBGA();
+    });
+    
+    // $('.autobg').each(function (index, currentElement) {
+    //     currentElement.style.backgroundImage = getRBGA();
+    // });
+    </script>
+</body>
+</html>
